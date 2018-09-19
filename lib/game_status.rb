@@ -39,7 +39,6 @@ def won?(board)
       counter +=1
   end
   
-  counter = 0
   match_array_X = []
   match_array_O = []
   WIN_COMBINATIONS.each do |combo|
