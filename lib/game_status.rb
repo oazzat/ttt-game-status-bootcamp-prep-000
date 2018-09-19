@@ -67,7 +67,14 @@ def won?(board)
 end
 
 def full? (board)
-
+  is_full? = false
+  counter = 0
+  board.each do |pos|
+    if !pos.position_taken?(board,counter)
+      return false
+    end
+  end
+  return true
 #return true if all positions filled
 end
 
