@@ -1,4 +1,4 @@
-winner = nil
+game_winner = nil
 
 # Helper Method
 def position_taken?(board, index)
@@ -53,13 +53,13 @@ def won?(board)
       
     end
     if match_array_X[0] == true && match_array_X[1] == true && match_array_X[2] == true
-      winner = "X"
+      game_winner = "X"
       return combo
     else
       match_array_X.clear()
     end
     if match_array_O[0] == true && match_array_O[1] == true && match_array_O[2] == true
-      winner = "O"
+      game_winner = "O"
       return combo
     else
       match_array_O.clear()
