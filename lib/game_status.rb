@@ -38,13 +38,20 @@ def won?(board)
   end
   
   counter = 0
-  match_array = []
+  match_array_X = []
+  match_array_O = []
   WIN_COMBINATIONS.each do |combo|
     combo.each do |ind|
       if win_array_X[ind] == ind
-        match_array.push(true)
+        match_array_X.push(true)
+      end
+      if win_array_O[ind] == ind
+        match_array_O.push(true)
+      end
+      
+      
     end
-    
+    if match_array_X[0] == true && match_array_X[0] == true &&
   end
      
   
