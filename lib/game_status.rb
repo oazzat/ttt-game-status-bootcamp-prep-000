@@ -68,7 +68,7 @@ def won?(board)
   end
      
   
-  return nil
+  #return nil
 #returns nil or winning combo if won  
 end
 
