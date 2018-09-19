@@ -25,10 +25,10 @@ def won?(board)
   counter_O = 0  
   while counter < 9 do
     if board[counter] == "X"
-      win_array_X.[counter] = counter
+      win_array_X[counter] = counter
     
     elsif board [counter] == "O"
-      win_array_O.[counter] = counter
+      win_array_O[counter] = counter
     end
       
       counter +=1
