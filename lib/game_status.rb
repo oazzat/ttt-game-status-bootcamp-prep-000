@@ -26,16 +26,12 @@ def won?(board)
   while counter < 9 do
     if board[counter_X] == "X"
       win_array_X.push(counter_X)
-      counter_X +=1
+    
     elsif board [counter_O] == "O"
       win_array_O.push(counter_O)
-      counter_O +=1
-    else
-      win_array_X.push("")
-      win_array_O.push("")
+    end
       counter_X +=1
       counter_O +=1
-    end
       counter +=1
   end
   
