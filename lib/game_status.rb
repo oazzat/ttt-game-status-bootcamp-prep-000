@@ -68,8 +68,8 @@ end
 
 def full? (board)
   counter = 0
-  board.each do |pos|
-    if !pos.position_taken?(board,counter)
+  board.each do
+    if !board.position_taken?(board,counter)
       return false
     end
     counter +=1
