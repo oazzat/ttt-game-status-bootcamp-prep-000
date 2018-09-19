@@ -49,9 +49,8 @@ def won?(board)
       if win_array_O[ind] == ind
         match_array_O.push(true)
       end
-      
-      
     end
+    
     if match_array_X[0] == true && match_array_X[1] == true && match_array_X[2] == true
       $game_winner = "X"
       return combo
@@ -88,6 +87,10 @@ def over(board)
 end
 
 def winner (board)
-  return $game_winner
+  if won?(board) == false
+    return nil
+  else
+    return $game_winner
+  end
 #returns the winner, x or o  
 end
