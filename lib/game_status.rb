@@ -88,16 +88,11 @@ def draw? (board)
 end
 
 def over?(board)
-  if won?(board) == true
-    return true
-  elsif draw?(board) == true || full?(board) == true
+  if $game_winner == "X" || $game_winner == "O" || draw?(board) == true || full?(board) == true
     return true
   end
-   if $game_winner == "X" || $game_winner == "O"
-     return true
-   end
    
-   return false
+  return false
 
 #returns true if board won, draw, or full
 end
