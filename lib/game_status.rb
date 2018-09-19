@@ -1,4 +1,4 @@
-game_winner = nil
+var game_winner = nil
 
 # Helper Method
 def position_taken?(board, index)
