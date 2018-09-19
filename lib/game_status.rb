@@ -88,6 +88,6 @@ def over(board)
 end
 
 def winner (board)
-  
+  return winner
 #returns the winner, x or o  
 end
