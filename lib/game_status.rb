@@ -88,6 +88,6 @@ def over(board)
 end
 
 def winner (board)
-  return winner
+  return game_winner
 #returns the winner, x or o  
 end
