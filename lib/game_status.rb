@@ -79,7 +79,11 @@ def full? (board)
 end
 
 def draw? (board)
-
+  if full? == true && (won? == false || won == nil)
+    return true
+  else
+    return false
+  end
 #returns true if board is full but not won
 end
 
