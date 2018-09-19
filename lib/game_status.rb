@@ -92,8 +92,6 @@ def over?(board)
     return true
   elsif draw?(board) == true || full?(board) == true
     return true
-  else
-    return false
   end
 
 #returns true if board won, draw, or full
