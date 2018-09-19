@@ -36,7 +36,9 @@ def won?(board)
   match_array = []
   WIN_COMBINATIONS.each do |combo|
     combo.each do |ind|
-        win_array_X.select
+        win_array_X.select do |check|
+          
+        end
     end
     
   end
