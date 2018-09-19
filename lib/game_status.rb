@@ -88,7 +88,7 @@ def draw? (board)
 end
 
 def over?(board)
-  if $game_winner == "X" || $game_winner == "O" || draw?(board) == true || full?(board) == true
+  if winner(board) != nil || draw?(board) == true || full?(board) == true
     return true
   end
    
