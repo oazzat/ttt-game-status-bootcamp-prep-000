@@ -72,6 +72,7 @@ def full? (board)
     if !pos.position_taken?(board,counter)
       return false
     end
+    counter +=1
   end
   return true
 #return true if all positions filled
