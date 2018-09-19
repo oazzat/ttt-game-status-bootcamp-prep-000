@@ -24,14 +24,13 @@ def won?(board)
   counter_X = 0
   counter_O = 0  
   while counter < 9 do
-    if board[counter_X] == "X"
-      win_array_X.push(counter_X)
+    if board[counter] == "X"
+      win_array_X.[counter] = counter
     
-    elsif board [counter_O] == "O"
-      win_array_O.push(counter_O)
+    elsif board [counter] == "O"
+      win_array_O.[counter] = counter
     end
-      counter_X +=1
-      counter_O +=1
+      
       counter +=1
   end
   
