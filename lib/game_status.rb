@@ -51,7 +51,8 @@ def won?(board)
       
       
     end
-    if match_array_X[0] == true && match_array_X[0] == true &&
+    if match_array_X[0] == true && match_array_X[1] == true &&match_array_X[2] == true
+      return combo
   end
      
   
