@@ -93,12 +93,9 @@ def over?(board)
   elsif draw?(board) == true || full?(board) == true
     return true
   end
-  
-  if !full?(board)
-    if won?(board) == true
-      return true
-    end
-  end
+   if $game_winner == "X" || $game_winner == "O"
+     return true
+   end
 
 #returns true if board won, draw, or full
 end
