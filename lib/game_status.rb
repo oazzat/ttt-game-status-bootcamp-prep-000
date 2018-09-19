@@ -88,6 +88,11 @@ def draw? (board)
 end
 
 def over(board)
+  if won?(board) == true || draw?(board) == true || full?(board) == true
+    return true
+  else
+    return false
+  end
 
 #returns true if board won, draw, or full
 end
