@@ -1,4 +1,4 @@
-var game_winner = nil
+global_variables game_winner = nil
 
 # Helper Method
 def position_taken?(board, index)
