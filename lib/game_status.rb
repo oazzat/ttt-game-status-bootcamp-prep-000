@@ -59,11 +59,17 @@ def won?(board)
     else
       match_array_X.clear()
     end
+    if match_array_O[0] == true && match_array_O[1] == true && match_array_O[2] == true
+      winner = "O"
+      return combo
+    else
+      match_array_O.clear()
+    end
     
   end
      
   
-  
+  return nil
 #returns nil or winning combo if won  
 end
 
