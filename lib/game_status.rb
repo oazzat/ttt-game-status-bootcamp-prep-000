@@ -28,6 +28,11 @@ def won?(board)
     elsif board [counter_O] == "O"
       win_array_O.push(counter_O)
       counter_O +=1
+    else
+      win_array_X.push("")
+      win_array_O.push("")
+      counter_X +=1
+      counter_O +=1
     end
       counter +=1
   end
