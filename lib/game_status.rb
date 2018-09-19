@@ -41,7 +41,8 @@ def won?(board)
   match_array = []
   WIN_COMBINATIONS.each do |combo|
     combo.each do |ind|
-        
+      if win_array_X[ind] == ind
+        match_array.push(true)
     end
     
   end
